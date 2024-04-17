@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.body {
+  background: linear-gradient(
+    rgb(56, 56, 120),
+    rgb(106, 67, 67),
+    rgb(104, 121, 91)
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(0, 255, 255);
+  gap: 5px;
+}
+#scorecard {
+  padding: 5px;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+}
+#board {
+  min-width: 90vmin;
+  max-width: 90vw;
+  min-height: 75vh;
+  max-height: 75vh;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  background: linear-gradient(rgb(45, 19, 45), rgb(4, 4, 56));
+  border: 1px solid aqua;
+  box-shadow: 0 0 2px 2px rgb(0, 255, 64);
+  padding: 1px;
+  border-radius: 3px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.arrow {
+  display: inline-block;
+  width: 30px;
+  min-height: 25px;
+  text-align: center;
+  border: 0.1px solid rgb(0, 255, 21);
+  margin: 2px;
+  color: rgb(38, 1, 1);
+  cursor: pointer;
+  box-shadow: 0 0 2px 2px rgb(201, 220, 114);
+  background-color: #98e9b3;
+  border-radius: 3px;
+}
+.food {
+  background-color: rgb(0, 255, 47);
+  box-shadow: 0 0 5px 2px rgb(81, 181, 135);
+  border-radius: 2px;
+}
+.head {
+  background-color: rgb(255, 42, 0);
+  border-radius: 2px;
+  box-shadow: 0 0 5px 2px rgb(251, 55, 0);
+}
+.snake {
+  background-color: rgba(251, 55, 0, 0.575);
+  border-radius: 4px;
+  box-shadow: 0 0 5px 2px rgba(251, 55, 0, 0.639);
+}
+#scoreBox,
+#hiscoreBox {
+  border: 1px solid rgb(156, 242, 242);
+  border-radius: 4px;
+  padding: 1px 5px;
+  box-shadow: 0 0 2px 2px rgb(137, 114, 220);
+}
