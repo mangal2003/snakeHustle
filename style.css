@@ -39,7 +39,7 @@ body {
   background-color: #fff;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(18, 1fr);
+  grid-template-rows: repeat(27, 1fr);
   background: linear-gradient(rgb(45, 19, 45), rgb(4, 4, 56));
   border: 1px solid aqua;
   box-shadow: 0 0 2px 2px rgb(0, 255, 64);
