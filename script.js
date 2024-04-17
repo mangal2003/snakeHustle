@@ -34,7 +34,7 @@ function isCollide(snake) {
   if (
     snake[0].x >= 18 ||
     snake[0].x <= 0 ||
-    snake[0].y >= 18 ||
+    snake[0].y >= 27 ||
     snake[0].y <= 0
   ) {
     score = 0;
@@ -74,7 +74,7 @@ function gameEngine() {
 
     food = {
       x: Math.round(a + (b - a) * Math.random()),
-      y: Math.round(a + (b - a) * Math.random()),
+      y: Math.round(a + (26 - a) * Math.random()),
     };
   }
 
@@ -168,7 +168,4 @@ function ArrowDown() {
   inputDir.y = 1;
   moveSound.play();
 }
-function keyDown() {
-  inputDir = { x: 0, y: 1 }; // Start the game
-  moveSound.play();
-}
+
