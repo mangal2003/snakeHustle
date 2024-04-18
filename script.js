@@ -7,9 +7,6 @@ let speed = 5;
 setInterval(() => {
   if (speed < 18) {
     speed += 1;
-    console.log(speed);
-  } else {
-    console.log("speed constant");
   }
 }, 10000);
 let score = 0;
